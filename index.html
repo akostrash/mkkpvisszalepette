@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Az MKKP még nem lépett vissza</title>
+   <style>
+     body{
+      background: #333;
+     }
+	 
+	 #flex{
+		height: 100%;
+		padding: 0;
+		margin: 0;
+		display: -webkit-box;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	#cont{
+		width: auto;
+	 }
+	 
+    #nem{
+	
+		animation-delay: .2s;
+		opacity: 0;
+		animation-name: reveal-up;
+		animation-duration: 1.4s;
+		animation-timing-function: ease-out;
+		animation-fill-mode: forwards;
+        font-family:arial;
+	    font-style: normal;
+		font-weight: 900;
+		font-size: 30vw;
+		line-height: 30vw;
+		text-align:center;
+		color:#972f2f;
+     }
+	 #dejolenne{
+		animation-delay: 2.5s;
+		opacity: 0;
+		animation-name: reveal-up;
+		animation-duration: 1.4s;
+		animation-timing-function: ease-out;
+		animation-fill-mode: forwards;
+		color:#972f2f;
+		text-align:center;
+		font-size: 30px
+		
+	 }
+	 @keyframes reveal-up {
+
+		 0% {
+			opacity: 0;
+			ransform: translateY(18px);
+		}
+		100% {
+		  opacity: 1;
+		  transform: translateY(0);
+		}
+	}
+    </style>
+  </head>
+
+  <body>
+	<div id="flex">
+	<div id="cont">
+    <div id="nem">NEM</div>
+	<div id="dejolenne">de jó lenne :)</div>
+	</div>
+	</div>
+	
+	
+  </body>
+</html>
